@@ -1,0 +1,673 @@
+<!-- layout.nunjucks -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://use.typekit.net/isk7wft.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="js/app.js">
+</head>
+<body>
+
+<!-- You write code for this content block in another file -->
+
+
+<!-- header.nunjucks -->
+<header class="header sticky-top is-hidden container-fluid">
+  <!-- top-bar.nunjucks -->
+<div class="top-bar container-fluid d-flex flex-row justify-content-between">
+  <div class="top-bar__contact">
+    <div class="top-bar__help top-bar-dropdown-menu js-top-bar-dropdown-menu">
+      How can we help you? <i class="fa fa-angle-right" aria-hidden="true"></i>
+        <div class="top-bar-sub-menu js-top-bar-sub-menu">
+          <!-- header.top-bar-enquiry.nunjucks -->
+<div class="top-bar-enquiry">
+  <div class="container">
+    <h4>Make an enquiry</h4>
+    <form>
+      <div class="row">
+        <div class="col-sm">
+          <div class="form-group">
+            <input type="text" class="form-control" id="exampleInputName" aria-describedby="name" placeholder="Please fill in your name">
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="form-group">
+            <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="email" placeholder="Please fill in your email">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <div class="form-group">
+            <input type="number" class="form-control" id="exampleInputNumber" aria-describedby="number" placeholder="Please fill in your phone number">
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="form-group">
+            <select class="form-control">
+              <option>Default select</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Comments / Message"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <button type="submit" class="m-button">Submit <i class="fa fa-long-arrow-right"></i></button>
+        </div>
+      </div>
+    </form>
+
+  </div>
+</div>
+        </div>
+    </div>
+    <div class="top-bar__divider"></div>
+    <div class="top-bar__phone top-bar-dropdown-menu js-top-bar-dropdown-menu">
+      <span class="top-bar__text"><i class="fa fa-phone" aria-hidden="true"></i>1300 4 Morris</span>
+      <div class="top-bar-sub-menu js-top-bar-sub-menu">
+        <!-- header.top-bar-contact.nunjucks -->
+<div class="top-bar-contact">
+  <div class="container">
+    <h4>Contact us</h4>
+
+    <div class="row">
+      <div class="col-sm top-bar-contact__col">
+        <span class="top-bar-contact__number">
+          <i class="fa fa-phone" aria-hidden="true"></i> 03 5223 34 53
+        </span>
+        <span class="top-bar-contact__opening">
+          <i class="fa fa-clock-o" aria-hidden="true"></i> Monday - Friday, 8:30am - 5:00pm
+        </span>
+      </div>
+      <div class="col-sm top-bar-contact__col">
+        <span class="top-bar-contact__heading">
+          <i class="fa fa-map-marker" aria-hidden="true"></i> OFFICE ADDRESS
+        </span>
+        <span class="top-bar-contact__info">
+          Harrison Place, Level 2, 237 Ryrie Street<br/> Geelong Vic 3220
+        </span>
+      </div>
+      <div class="col-sm top-bar-contact__col">
+        <span class="top-bar-contact__heading">
+          <i class="fa fa-envelope" aria-hidden="true"></i> POSTAL ADDRESS
+        </span>
+        <span class="top-bar-contact__info">P.O. Box 4233, Geelong Vic 3220
+        </span>
+      </div>
+      <div class="col-sm top-bar-contact__col">
+        <a href="#" class="cta-link cta-link--lrg">View More <i class="fa fa-long-arrow-right"></i></a>
+      </div>
+    </div>
+
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="top-bar__tools">
+    <div class="top-bar__social">
+      <ul>
+        <li>
+          <a href="#">
+            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="top-bar__divider"></div>
+    <div class="top-bar__search top-bar-dropdown-menu js-top-bar-dropdown-menu">
+
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <div class="top-bar-sub-menu js-top-bar-sub-menu">
+          <!-- header.top-bar-search.nunjucks -->
+<div class="top-bar-search">
+  <div class="container">
+    <form>
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="form-group">
+            <input type="search" class="form-control" id="exampleInputName" aria-describedby="search" placeholder="Search">
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <button type="submit" class="m-button">Submit <i class="fa fa-long-arrow-right"></i></button>
+        </div>
+      </div>
+    </form>
+
+  </div>
+</div>
+        </div>
+
+    </div>
+    <div class="top-bar__login">
+      <div class="top-bar-dropdown-menu js-top-bar-dropdown-menu">
+        Login
+        <div class="top-bar-sub-menu js-top-bar-sub-menu">
+          <!-- header.top-bar-login.nunjucks -->
+<div class="top-bar-login">
+  <div class="container">
+    <form>
+      <div class="row">
+        <div class="col-sm-5">
+          <div class="form-group">
+            <input type="email" class="form-control" id="exampleInputName" aria-describedby="email" placeholder="Please fill in your email">
+            <small id="emailHelp" class="form-text text-muted">Don't have an account <a href="#">register now</a></small>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="form-group">
+            <input type="password" class="form-control" id="exampleInputName" aria-describedby="password" placeholder="Please fill in your password">
+            <small id="passwordHelp" class="form-text text-muted"><a href="#">Forgot password?</a></small>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <button type="submit" class="m-button">Login <i class="fa fa-long-arrow-right"></i></button>
+        </div>
+      </div>
+    </form>
+
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+<!-- navigation.nunjucks -->
+<nav class="navbar navbar-expand-lg is-hidden sticky-top justify-content-between">
+  <a class="navbar-brand" href="#">
+    <img src="/assets/logo.png" width="280" alt="Morris Finance">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="navbar__menu collapse navbar-collapse justify-content-end" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active nav-dropdown-menu">
+        <a class="nav-link" href="#">About</a>
+        <ul class="sub-menu">
+          <li>
+            <a class="nav-link" href="#">Finances</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#">Finances</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Finances</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Investment</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Community</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- layout.hero-carousel -->
+<div class="hero">
+
+  <div id="carouselHeroIndicators" class="hero-carousel carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <h1>Some text <span class="hero-carousel__alt-color">alt text</span></h1>
+      </div>
+      <div class="carousel-item">
+        <h1>Some Text 2</h1>
+      </div>
+      <div class="carousel-item">
+        <h1>Some Text 3</h1>
+      </div>
+    </div>
+    <ol class="carousel-indicators">
+      <li data-target="#carouselHeroIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselHeroIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselHeroIndicators" data-slide-to="2"></li>
+    </ol>
+  </div>
+
+  <div class="hero-links d-flex">
+    <div class="hero-links__item">
+      <h3>Finance</h3>
+      <p>Text</p>
+      <a class="cta-link cta-link--sml" href="#">Discover More <i class="fa fa-long-arrow-right"></i></a>
+    </div>
+    <div class="hero-links__item">
+      <h3>Finance</h3>
+      <p>Text</p>
+      <a class="cta-link cta-link--sml" href="#">Discover More <i class="fa fa-long-arrow-right"></i></a>
+    </div>
+    <div class="hero-links__item">
+      <h3>Finance</h3>
+      <p>Text</p>
+      <a class="cta-link cta-link--sml" href="#">Discover More <i class="fa fa-long-arrow-right"></i></a>
+    </div>
+  </div>
+
+</div>
+<!-- layout.homepage-heading -->
+<div class="container homepage-heading">
+  <div class="row">
+    <h2>Unlock your<br/><span class="accent-color">business</span> potential</h2>
+  </div>
+  <div class="row">
+    <div class="col">
+      &nbsp;
+    </div>
+    <div class="col-10">
+      <h4>Morris Finance is a finance, leasing and risk management specialist with a reputation for producing oustanding business results across a broad range of industries.</h4>
+      <a href="">
+        <a class="cta-link cta-link--lrg" href="#">Find out more <i class="fa fa-long-arrow-right"></i></a>
+      </a>
+    </div>
+  </div>
+</div>
+<div class="tabs container">
+
+  <ul class="tabs__navigation js-tabs">
+    <li class="tabs__link tabs__current" data-tab="tab-1">Tab One</li>
+    <li class="tabs__link" data-tab="tab-2">Tab Two</li>
+    <li class="tabs__link" data-tab="tab-3">Tab Three</li>
+    <li class="tabs__link" data-tab="tab-4">Tab Four</li>
+  </ul>
+
+  <div id="tab-1" class="tabs__content tabs__current">
+    <div class="row">
+      <div class="col-5">
+        <h4>Business Car<br/> Finance</h4>
+        <p>We provide finance for new and used vehicles from all the popular manufacturers. As long as the vehicles we finance are used for commercial purposes, it doesn’t matter what age, make or model you choose.</p>
+        <a href="#" class="cta-link cta-link--sml">Discover More <i class="fa fa-long-arrow-right"></i></a>
+      </div>
+      <div class="col-7">
+        <img src="assets/car.jpg" width="100%" />
+      </div>
+    </div>
+  </div>
+  <div id="tab-2" class="tabs__content">
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </div>
+  <div id="tab-3" class="tabs__content">
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  </div>
+  <div id="tab-4" class="tabs__content">
+    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </div>
+
+</div><!-- container -->
+<!-- testimonial-carousel.nunjucks -->
+<div class="testimonial">
+
+  <div id="carouselExampleIndicators" class="testimonial-carousel carousel slide" data-ride="carousel">
+    <div class="carousel-inner container">
+      <div class="carousel-item active">
+        <blockquote class="testimonial__blockquote">
+          <h5>Ximi, veliquam fuga. Nemqui cullabo. Et arum facernatur, con rehenda erestissint et, sum, conet verum volectat doleni untio eum ium quid mi, quibusa sit et laut fugia simpos ressenis et, corunt, to optatur. Natas conestr uptassunt, optatur, a is il ipis volutate res quat minctem sin corest expla doluptatia voluptati con rersperibus sequiasi dolorum nim eume parcipiciae vercil iunt voluptur."</h5>
+          <div class="testimonial__author">
+            <div class="testimonial__name">
+              Adam Kelly
+            </div>
+            <div class="testimonial__company">
+              SixTwo Creative
+            </div>
+          </div>
+        </blockquote>
+      </div>
+      <div class="carousel-item">
+        <blockquote class="testimonial__blockquote">
+          <h5>Ximi, veliquam fuga. Nemqui cullabo. Et arum facernatur, con rehenda erestissint et, sum, conet verum volectat doleni untio eum ium quid mi, quibusa sit et laut fugia simpos ressenis et, corunt, to optatur. Natas conestr uptassunt, optatur, a is il ipis volutate res quat minctem sin corest expla doluptatia voluptati con rersperibus sequiasi dolorum nim eume parcipiciae vercil iunt voluptur."</h5>
+          <div class="testimonial__author">
+            <div class="testimonial__name">
+              Adam Kelly
+            </div>
+            <div class="testimonial__company">
+              SixTwo Creative
+            </div>
+          </div>
+        </blockquote>
+      </div>
+      <div class="carousel-item">
+        <blockquote class="testimonial__blockquote">
+          <h5>Ximi, veliquam fuga. Nemqui cullabo. Et arum facernatur, con rehenda erestissint et, sum, conet verum volectat doleni untio eum ium quid mi, quibusa sit et laut fugia simpos ressenis et, corunt, to optatur. Natas conestr uptassunt, optatur, a is il ipis volutate res quat minctem sin corest expla doluptatia voluptati con rersperibus sequiasi dolorum nim eume parcipiciae vercil iunt voluptur."</h5>
+          <div class="testimonial__author">
+            <div class="testimonial__name">
+              Adam Kelly
+            </div>
+            <div class="testimonial__company">
+              SixTwo Creative
+            </div>
+          </div>
+        </blockquote>
+      </div>
+    </div>
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+  </div>
+</div>
+<!-- latest-news.nunjucks -->
+<div class="latest-news container">
+  <div class="row">
+    <h2>Our latest <span class="accent-color">news</span></h2>
+  </div>
+  <div class="row">
+    <h5>Catch up with all the Morris Finance news and updates.</h5>
+  </div>
+  <div class="row d-flex">
+    <div class="col-sm">
+      <div class="blog-item blog-item__latest">
+        <div class="blog-item__latest-image">
+          <img src="assets/latest-news-thumb-lrg@2x.png" />
+        </div>
+
+        <div class="blog-item__content">
+          <h6 class="blog-item__heading"><a href="#">Mobil 1 HSV Racing Bathurst 1000 Race Wrap</a></h6>
+
+          <div class="blog__tools">
+            <span class="blog-item__tools-date">
+              <i class="fa fa-clock-o" aria-hidden="true"></i> 09 Oct 2017
+            </span>
+            <span class="blog-item__tools-tags">
+              <i class="fa fa-tag" aria-hidden="true"></i> MFL Community
+            </span>
+          </div>
+          <p>Scott Pye and Warren Luff have claimed second position at the 2017 Bathurst 1000. What a day for them, and the team. Both Scotty and Luffy drove flawlessly for the 1000 kilometres around the mountain.</p>
+          <a href="#" class="cta-link cta-link--sml">Read More <i class="fa fa-long-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="row">
+        <div class="blog__item latest-news__recent-items">
+          <div class="blog-item__latest-image">
+            <img src="assets/latest-news-thumb1@2x.png" />
+          </div>
+
+          <div class="blog-item__content">
+            <h6 class="blog-item__heading"><a href="#">Mobil 1 HSV Racing Bathurst 1000 Race Wrap</a></h6>
+
+            <div class="blog-item__tools">
+              <span class="blog-item__tools-date">
+                <i class="fa fa-clock-o" aria-hidden="true"></i> 09 Oct 2017
+              </span>
+              <span class="blog-item__tools-tags">
+                <i class="fa fa-tag" aria-hidden="true"></i> MFL Community
+              </span>
+            </div>
+            <p>Scott Pye and Warren Luff have claimed second position at the 2017 Bathurst 1000. What a day for them, and the team. Both Scotty and Luffy drove flawlessly for the 1000 kilometres around the mountain.</p>
+            <a href="#" class="cta-link cta-link--sml">Read More <i class="fa fa-long-arrow-right"></i></a>
+          </div>
+
+        </div>
+      </div>
+      <div class="row">
+
+
+        <div class="blog__item latest-news__recent-items">
+          <div class="blog-item__latest-image">
+            <img src="assets/latest-news-thumb2@2x.png" />
+          </div>
+
+          <div class="blog-item__content">
+            <h6 class="blog-item__heading"><a href="#">Mobil 1 HSV Racing Bathurst 1000 Race Wrap</a></h6>
+
+            <div class="blog-item__tools">
+              <span class="blog-item__tools-date">
+                <i class="fa fa-clock-o" aria-hidden="true"></i> 09 Oct 2017
+              </span>
+              <span class="blog-item__tools-tags">
+                <i class="fa fa-tag" aria-hidden="true"></i> MFL Community
+              </span>
+            </div>
+            <p>Scott Pye and Warren Luff have claimed second position at the 2017 Bathurst 1000. What a day for them, and the team. Both Scotty and Luffy drove flawlessly for the 1000 kilometres around the mountain.</p>
+            <a href="#" class="cta-link cta-link--sml">Read More <i class="fa fa-long-arrow-right"></i></a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <a href="#" class="cta-link cta-link--lrg">View All <i class="fa fa-long-arrow-right"></i></a>
+  </div>
+</div>
+<!-- layout.icon-slider -->
+<div class="icon-slider-container container">
+  <div class="row">
+    <h2>Our <br/><span class="accent-color">community</span></h2>
+  </div>
+  <div class="row">
+    <div class="col">
+      &nbsp;
+    </div>
+    <div class="col-10">
+      <h4>We are pleased to be associated with some of the following organisations, teams and events:</h4>
+    </div>
+  </div>
+
+  <div class="icon-slider owl-carousel owl-theme d-flex align-items-center">
+
+    <div class="icon-slider__logo">
+      <img src="assets/community/community-bbl@2x.png" />
+    </div>
+    <div class="icon-slider__logo">
+      <img src="assets/community/community-geelong@2x.png" />
+    </div>
+    <div class="icon-slider__logo">
+      <img src="assets/community/community-mobil@2x.png" />
+    </div>
+    <div class="icon-slider__logo">
+      <img src="assets/community/community-seagulls@2x.png" />
+    </div>
+    <div class="icon-slider__logo">
+      <img src="assets/community/community-werribee@2x.png" />
+    </div>
+    <div class="icon-slider__logo">
+      <img src="assets/community/community-bbl@2x.png" />
+    </div>
+
+  </div>
+</div>
+<!-- footer.nunjucks -->
+<div class="footer-container">
+  <footer class="footer container-fluid">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <div class="footer-logo">
+            <a href="#">
+              <img src="assets/logo-inverted.png" />
+            </a>
+          </div>
+          <div class="footer-details">
+            <div class="footer-details__phone-number">
+              <i class="fa fa-phone" aria-hidden="true"></i> 03 5223 34 53
+            </div>
+            <div class="footer-details__address">
+              <i class="fa fa-map-marker" aria-hidden="true"></i><span>Office Address</span>
+              <p>Harrison Place, Level 2, 237 Ryrie Street
+                Geelong Vic 3220</p>
+            </div>
+            <div class="footer-details__address">
+              <i class="fa fa-envelope" aria-hidden="true"></i><span>Postal Address</span>
+              <p>P.O. Box 4233, Geelong Vic 3220</p>
+            </div>
+          </div>
+          <div class="footer-social-links">
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="footer-links">
+            <ul>
+              <li>
+                <a href="#">
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Finance
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Investment
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Community
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Contact Us
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Login
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-extras">
+            <div class="footer-extras__item">
+              <span class="footer-extras__title">Twitter Feed</span>
+              <div class="footer-twitter-feed">
+
+              </div>
+            </div>
+
+            <div class="footer-extras__item">
+              <span class="footer-extras__title">Associations</span>
+              <div class="footer-associations">
+
+                <div class="footer-assocations__item">
+                  <a href="#">
+                    <img src="assets/associations/AAMC@2x.png" />
+                  </a>
+                </div>
+                <div class="footer-assocations__item">
+                  <a href="#">
+                    <img src="assets/associations/APRA@2x.png" />
+                  </a>
+                </div>
+                <div class="footer-assocations__item">
+                  <a href="#">
+                    <img src="assets/associations/ASIC@2x.png" />
+                  </a>
+                </div>
+                <div class="footer-assocations__item">
+                  <a href="#">
+                    <img src="assets/associations/CAFBA@2x.png" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="footer-bottom-bar">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <div class="footer-bottom-bar__copyright">
+            &copy; 2017 Morris Finance Ltd. All rights reserved.
+          </div>
+        </div>
+        <div class="col-sm">
+          <ul class="footer-bottom-bar__sub-links">
+            <li>
+              <a href="#">
+                ACL No.395249
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Privacy Policy
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Terms and Conditions
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                ABN 70 083 630 139
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

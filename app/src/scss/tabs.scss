@@ -1,0 +1,36 @@
+.tabs__navigation {
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  h4 {
+    color: $accent-color;
+  }
+}
+
+.tabs__navigation .tabs__link {
+  background: none;
+  flex: 1;
+  color: $accent-color;
+  padding: 10px 15px;
+  cursor: pointer;
+  height: 158px;
+}
+
+.tabs__navigation .tabs__link.tabs__current{
+  background: $lighter-grey;
+  color: #222;
+}
+
+.tabs__content{
+  display: none;
+  background: $lighter-grey;
+  padding: 15px;
+};
+
+.tabs__content {
+  &.tabs__current {
+    display: inherit;
+  }
+}

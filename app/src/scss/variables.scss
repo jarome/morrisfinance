@@ -1,0 +1,23 @@
+//Base Morris Theme Colours
+$primary-color: #444444;
+$secondary-color: #808081;
+$accent-color: #ED2527;
+$dark-grey: #2f3030;
+$light-grey: #D5D6D5;
+$lighter-grey: #EAEBEA;
+$layout-spacing: 100px;
+
+$heading-text-color: #6C6D6D;
+
+$font-family-morris-finance: "aktiv-grotesk", "Roboto", "Helvetica Neue", Arial, sans-serif !default;
+$font-size-default: 0.875rem;
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+    visibility:visible;
+  }
+}

@@ -1,0 +1,30 @@
+.icon-slider {
+
+  .icon-slider__logo {
+    img {
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
+
+
+  .owl-nav {
+    .owl-prev,
+    .owl-next {
+      height: 20px;
+      width: 12px;
+      text-indent: -9999px;
+      position: absolute;
+      &.disabled {
+        opacity: 0.2;
+      }
+    }
+    .owl-prev {
+      background: url('../assets/arrow-left.svg');
+      left: 0;
+    }
+    .owl-next {
+      background: url('../assets/arrow-right.svg');
+    }
+  }
+}

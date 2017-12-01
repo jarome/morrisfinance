@@ -1,0 +1,61 @@
+<!-- top-bar.nunjucks -->
+<div class="top-bar container-fluid d-flex flex-row justify-content-between">
+  <div class="top-bar__contact">
+    <div class="top-bar__help top-bar-dropdown-menu js-top-bar-dropdown-menu">
+      How can we help you? <i class="fa fa-angle-right" aria-hidden="true"></i>
+        <div class="top-bar-sub-menu js-top-bar-sub-menu">
+          {% include "header/top-bar-enquiry.html" %}
+        </div>
+    </div>
+    <div class="top-bar__divider"></div>
+    <div class="top-bar__phone top-bar-dropdown-menu js-top-bar-dropdown-menu">
+      <span class="top-bar__text"><i class="fa fa-phone" aria-hidden="true"></i>1300 4 Morris</span>
+      <div class="top-bar-sub-menu js-top-bar-sub-menu">
+        {% include "header/top-bar-contact.html" %}
+      </div>
+    </div>
+  </div>
+  <div class="top-bar__tools">
+    <div class="top-bar__social">
+      <ul>
+        <li>
+          <a href="#">
+            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="top-bar__divider"></div>
+    <div class="top-bar__search top-bar-dropdown-menu js-top-bar-dropdown-menu">
+
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <div class="top-bar-sub-menu js-top-bar-sub-menu">
+          {% include "header/top-bar-search.html" %}
+        </div>
+
+    </div>
+    <div class="top-bar__login">
+      <div class="top-bar-dropdown-menu js-top-bar-dropdown-menu">
+        Login
+        <div class="top-bar-sub-menu js-top-bar-sub-menu">
+          {% include "header/top-bar-login.html" %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

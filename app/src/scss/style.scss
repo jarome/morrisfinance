@@ -1,0 +1,24 @@
+//Dependencies
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../../../node_modules/owl.carousel/src/scss/owl.carousel.scss';
+@import 'vendor/font-awesome-4.7.0/scss/font-awesome.scss';
+
+//Globals
+@import 'variables';
+@import 'global.scss';
+@import 'typography';
+@import 'buttons';
+@import 'forms';
+
+//Pages
+@import 'blog';
+
+//Sections
+@import 'top-bar.scss';
+@import 'header.scss';
+@import 'footer.scss';
+
+//Components
+@import 'carousel';
+@import 'icon-slider';
+@import 'tabs';

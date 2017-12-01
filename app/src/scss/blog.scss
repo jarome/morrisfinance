@@ -1,0 +1,16 @@
+.blog-item__latest-image {
+  img {
+    width: 100%;
+  }
+}
+
+// Latest News specific overrides
+
+.latest-news__recent-items {
+  display: flex;
+  flex-direction: row;
+  .blog-item__latest-image,
+  .blog-item__content {
+    flex: 1;
+  }
+}

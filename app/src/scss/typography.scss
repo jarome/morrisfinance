@@ -1,0 +1,51 @@
+h1 {
+  font-size: 90px;
+  line-height: floor(90px * 1.1);
+}
+
+h2 {
+  font-size: 64px;
+  line-height: floor(64px * 1.1);
+  color: $heading-text-color;
+}
+
+h3 {
+  font-size: 48px;
+  line-height: floor(48px * 1.1);
+}
+
+h4 {
+  font-size: 36px;
+  line-height: floor(36px * 1.1);
+}
+
+h5 {
+  font-size: 24px;
+  line-height: floor(24px * 1.1);
+}
+
+a {
+  color: $accent-color;
+  transition: 0.3s ease;
+  text-decoration: none;
+  &:hover {
+    color: darken($accent-color, 10%);
+    text-decoration: none;
+  }
+}
+
+.accent-color {
+  color: $accent-color;
+}
+
+.cta-link {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 900;
+  &--sml {
+    font-size: 14px;
+  }
+  &--lrg {
+    font-size: 16px;
+  }
+}
