@@ -10994,6 +10994,12 @@ a {
 .container-fluid {
   padding: 0; }
 
+.container--has-padding-top {
+  padding-top: 40px; }
+
+.container--has-padding-bottom {
+  padding-bottom: 40px; }
+
 .hero-heading {
   height: 237px;
   position: relative;
@@ -11011,6 +11017,11 @@ a {
     background-size: cover; }
     .no-backgroundsize .hero-heading--associations {
       background-image: url("../assets/headers/heading-associations@1x.png"); }
+  .hero-heading--finance {
+    background: url("../assets/headers/heading-finance@2x.png") left top no-repeat;
+    background-size: cover; }
+    .no-backgroundsize .hero-heading--finance {
+      background-image: url("../assets/headers/heading-finance@1x.png"); }
   .hero-heading:before {
     height: 100%;
     width: 100%;

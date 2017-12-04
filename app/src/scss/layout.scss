@@ -2,6 +2,14 @@
   padding: 0;
 }
 
+.container--has-padding-top {
+  padding-top: $layout-vertical-spacing;
+}
+
+.container--has-padding-bottom {
+  padding-bottom: $layout-vertical-spacing;
+}
+
 .hero-heading {
   height: 237px;
   position: relative;
@@ -22,6 +30,13 @@
             no-repeat,
             cover,
             url('../assets/headers/heading-associations@1x.png'));
+  }
+  &--finance {
+    @include image-2x(url('../assets/headers/heading-finance@2x.png'),
+            left top,
+            no-repeat,
+            cover,
+            url('../assets/headers/heading-finance@1x.png'));
   }
   &:before {
     height:100%;
