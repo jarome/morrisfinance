@@ -34,6 +34,7 @@ h5 {
     font-size: 64px;
     line-height: floor(64px * 1.1);
     color: $heading-text-color;
+    margin-bottom: $layout-vertical-spacing;
   }
 
   h3 {
@@ -60,6 +61,9 @@ a {
     color: darken($accent-color, 10%);
     text-decoration: none;
   }
+}
+
+p {
 }
 
 .accent-color {

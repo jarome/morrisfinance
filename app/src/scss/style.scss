@@ -10,6 +10,7 @@ $hamburger-layer-border-radius: 0;
 @import '../../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss';
 
 //Globals
+@import 'mixins';
 @import 'variables';
 @import 'global.scss';
 @import 'typography';

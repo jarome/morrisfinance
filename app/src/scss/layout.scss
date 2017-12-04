@@ -3,18 +3,26 @@
 }
 
 .hero-heading {
-  @include media-breakpoint-up(md) {
-    height: 435px;
-    h1 {
-      top: 190px;
-    }
-  }
   height: 237px;
   position: relative;
-  background: url('../assets/slider@2x.png');
   background-size: cover;
   color: #FFFFFF;
   border-bottom: 5px solid $accent-color;
+  background: url('../assets/slider@2x.png');
+  &--about {
+    @include image-2x(url('../assets/headers/heading-about@2x.png'),
+            left bottom,
+            no-repeat,
+            cover,
+            url('../assets/headers/heading-about@1x.png'));
+  }
+  &--associations {
+    @include image-2x(url('../assets/headers/heading-associations@2x.png'),
+            left top,
+            no-repeat,
+            cover,
+            url('../assets/headers/heading-associations@1x.png'));
+  }
   &:before {
     height:100%;
     width: 100%;
@@ -29,6 +37,12 @@
     position: relative;
     z-index: 1;
     top: 127px;
+  }
+  @include media-breakpoint-up(md) {
+    height: 435px;
+    h1 {
+      top: 190px;
+    }
   }
 }
 

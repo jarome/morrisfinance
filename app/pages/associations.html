@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+{% include "../partials/header.html" %}
+
+<div class="container-fluid">
+  <div class="hero-heading hero-heading--associations">
+    <div class="container">
+      <h1 class="carousel-item__heading">Our <span class="hero-carousel__alt-color">accreditations</span> <br/>and memberships</span></h1>
+    </div>
+  </div>
+  <div class="container content">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <h4>A key management priority for our business is the internal promotion of skilled and compliant staff from within.</h4>
+        <p>We have adopted this policy from day one and have aligned ourselves with a number of national and government agencies to assist with the development of our staff and suppliers to protect you, the customer.</p>
+        <p>Morris Finance is a member of the Australasian Academy of Mentoring and Coaching, which provides our staff with on-going training for a number of different disciplines. We have developed our own internal staff mentoring program that gives our team members the opportunity to grow professionally.</p>
+        <p>Morris Finance complies with Australian Anti Money Laundering and Counter Terrorism requirements.  The company is also registered to engage in credit activities under the National Consumer Credit Protection Act 2009, as part of this registration, we adhere to the policies and procedures advised in the Act, which ensures that we provide best practice services to our customers.</p>
+         <p>Morris Finance is also a member of the following organisations:</p>
+
+        <ul>
+          <li>Computer and office equipment</li>
+          <li>Earthmoving and construction equipment</li>
+        </ul>
+        <p><strong>If you would like further information on any of our accreditations or training programs, please <a href="#">contact us</a> today.</strong></p>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+  </div>
+
+  {% include "hero-links.html" %}
+
+  {% include "icon-slider.html" %}
+
+</div>
+{% include "../partials/footer.html" %}
+
+{% endblock %}

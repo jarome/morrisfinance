@@ -1,0 +1,29 @@
+@mixin image-2x($image-2x,
+		$positioning,
+		$repeat,
+		$size,
+		$fallback,
+		$detect-retina: false) {
+
+  @if $detect-retina {
+    background: $fallback $positioning $repeat;
+
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) {
+      background: $image-2x $positioning $repeat;
+      background-size: $size;
+    }
+  } @else {
+    background: $image-2x $positioning $repeat;
+    background-size: $size;
+
+    .no-backgroundsize & {
+      background-image: $fallback;
+    }
+  }
+}
