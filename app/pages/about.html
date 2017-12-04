@@ -1,0 +1,74 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+{% include "../partials/header.html" %}
+
+<div class="container-fluid">
+  <div class="hero-heading">
+    <div class="container">
+    <h1 class="carousel-item__heading">"Your success <br/>is <span class="hero-carousel__alt-color">our business</span>"</h1>
+    </div>
+  </div>
+  <div class="container content">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <h4>Morris Finance is Australian owned and one
+          of Australia’s leading finance companies, providing finance, investment, leasing and insurance services to:</h4>
+        <ul class="ul-flex ul-flex--lrg">
+          <li><h5>ABN Holders</h5></li>
+          <li><h5>Registered Companies</h5></li>
+          <li><h5>Individuals</h5></li>
+          <li><h5>Sole Traders</h5></li>
+        </ul>
+        <hr>
+        <p>What sets us apart is our passion to serve every customer.  To deliver on our promise to continuously improve in every way, including our knowledge, experience, financial solutions, service delivery and adapting to the needs of a dynamic and ever-changing market place.<br/><br/>
+          From the first time you meet one of our finance brokers or new business specialists, through to post-loan approval, you will know that we are there to partner with you.<br/><br/>
+          We have extensive experience providing finance options including; asset finance, chattel mortgage, hire purchase, leasing, novated leasing and sale & leaseback facilities to a national client base, across a wide range of industries, for an extensive range of assets, including and not limited to:</p>
+
+        <ul>
+          <li>Computer and office equipment</li>
+          <li>Earthmoving and construction equipment</li>
+        </ul>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+  </div>
+
+  <div class="container content">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="dual-image-block">
+          <div class="dual-image-block__item">
+            <img src="../assets/dual-image-1.png" />
+          </div>
+          <div class="dual-image-block__item">
+            <img src="../assets/dual-image-2.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container content">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <h5>An experienced team of national <span class="accent-color">finance</span> brokers and new <span class="accent-color">business</span> specialists</h5>
+        <ul>
+          <li>Computer and office equipment</li>
+          <li>Earthmoving and construction equipment</li>
+        </ul>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+  </div>
+
+
+  {% include "hero-links.html" %}
+
+</div>
+{% include "../partials/footer.html" %}
+
+{% endblock %}

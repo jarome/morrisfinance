@@ -3,21 +3,36 @@ body {
   font-family: $font-family-morris-finance;
   font-size: $font-size-default;
   color: $primary-color;
+  width: 100%;
+  height: 100%;
 }
 
 ul {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
-.container-fluid {
-  padding: 0;
-}
-
-.homepage-heading {
-  h2 {
-    color: #6C6D6D;
+.ul-flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
   }
+  li {
+    flex: 1 0 50%;
+    width: 50%;
+  }
+}
+
+hr {
+  border-top: 2px solid $accent-color;
+  margin: $layout-vertical-spacing 0;
+}
+
+.mobile-navigation-open {
+  position: fixed;
 }
 
 .is-visible {
@@ -28,4 +43,30 @@ ul {
 .is-hidden {
   display: none;
   visibility: hidden;
+}
+
+.hero__initial-logo {
+  position: fixed;
+  top: 40px;
+  z-index:10;
+  width: 100%;
+}
+
+.is-mobile-indicator {
+  display: block;
+  @include media-breakpoint-up(md) {
+    display: none;
+  }
+}
+
+.hide-for-mobile {
+  @include media-breakpoint-down(sm) {
+    display: none !important;
+  }
+}
+
+.hide-for-desktop {
+  @include media-breakpoint-up(md) {
+    display: none !important;
+  }
 }

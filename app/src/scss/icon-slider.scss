@@ -1,10 +1,20 @@
 .icon-slider {
 
+  padding: $layout-vertical-spacing 30px;
+
   .icon-slider__logo {
     img {
-      width: 50%;
+      width: 40%;
+      @include media-breakpoint-up(lg) {
+        width: 50%;
+      }
       margin: 0 auto;
     }
+  }
+
+  .owl-stage {
+    display: flex;
+    align-items: center;
   }
 
 

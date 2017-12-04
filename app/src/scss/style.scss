@@ -3,6 +3,12 @@
 @import '../../../node_modules/owl.carousel/src/scss/owl.carousel.scss';
 @import 'vendor/font-awesome-4.7.0/scss/font-awesome.scss';
 
+$hamburger-layer-width: 30px;
+$hamburger-layer-height: 4px;
+$hamburger-layer-spacing: 4px;
+$hamburger-layer-border-radius: 0;
+@import '../../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss';
+
 //Globals
 @import 'variables';
 @import 'global.scss';
@@ -16,6 +22,8 @@
 //Sections
 @import 'top-bar.scss';
 @import 'header.scss';
+@import 'layout.scss';
+@import 'content.scss';
 @import 'footer.scss';
 
 //Components

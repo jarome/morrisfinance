@@ -1,9 +1,12 @@
 .tabs__navigation {
   display: flex;
-  flex-direction: row;
   margin: 0px;
   padding: 0px;
   list-style: none;
+  flex-direction: column;
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
+  }
   h4 {
     color: $accent-color;
   }

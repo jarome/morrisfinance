@@ -1,27 +1,55 @@
 h1 {
-  font-size: 90px;
-  line-height: floor(90px * 1.1);
-}
-
-h2 {
-  font-size: 64px;
-  line-height: floor(64px * 1.1);
-  color: $heading-text-color;
-}
-
-h3 {
-  font-size: 48px;
-  line-height: floor(48px * 1.1);
-}
-
-h4 {
   font-size: 36px;
   line-height: floor(36px * 1.1);
 }
 
-h5 {
+h2 {
+  font-size: 30px;
+  line-height: floor(30px * 1.1);
+  color: $heading-text-color;
+}
+
+h3 {
   font-size: 24px;
   line-height: floor(24px * 1.1);
+}
+
+h4 {
+  font-size: 20px;
+  line-height: floor(30px * 1.1);
+}
+
+h5 {
+  font-size: 18px;
+  line-height: floor(18px * 1.1);
+}
+
+@include media-breakpoint-up(md) {
+  h1 {
+    font-size: 90px;
+    line-height: floor(90px * 1.1);
+  }
+
+  h2 {
+    font-size: 64px;
+    line-height: floor(64px * 1.1);
+    color: $heading-text-color;
+  }
+
+  h3 {
+    font-size: 48px;
+    line-height: floor(48px * 1.1);
+  }
+
+  h4 {
+    font-size: 36px;
+    line-height: floor(36px * 1.1);
+  }
+
+  h5 {
+    font-size: 24px;
+    line-height: floor(24px * 1.1);
+  }
 }
 
 a {

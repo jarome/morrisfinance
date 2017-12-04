@@ -15,4 +15,13 @@
     background: $accent-color;
     color: #FFFFFF;
   }
+
+  &--solid {
+    color: #FFFFFF;
+    background: $accent-color;
+    &:hover {
+      background: darken($accent-color, 10%);
+      color: #FFFFFF;
+    }
+  }
 }

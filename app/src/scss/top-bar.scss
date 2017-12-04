@@ -9,7 +9,11 @@ $top-bar-sub-menu-vertical-padding-px: 60px;
 }
 
 .top-bar {
-  display: flex;
+  display: none;
+  @include media-breakpoint-up(md) {
+    display: flex;
+  }
+
   &:before {
     height: $top-bar-height-px;
     width: 100%;
@@ -88,11 +92,16 @@ $top-bar-sub-menu-vertical-padding-px: 60px;
   display: flex;
   align-items: center;
   z-index: 1;
-  padding-left: $layout-spacing;
+  @include media-breakpoint-up(lg) {
+    padding-left: $layout-spacing;
+  }
 }
 
+
 .top-bar__tools {
-  padding-right: $layout-spacing;
+  @include media-breakpoint-up(lg) {
+    padding-right: $layout-spacing;
+  }
   line-height: $top-bar-height-px;
 }
 
