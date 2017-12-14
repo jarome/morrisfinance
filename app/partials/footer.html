@@ -1,5 +1,12 @@
 <!-- footer.nunjucks -->
 <div class="footer-container">
+
+  <!-- START Interchangeable Newsletter Area - Switched on and off via the backend logic -->
+
+  {% include "subscribe.html" %}
+
+  <!-- END Interchangeable Newsletter Area -->
+
   <footer class="footer container-fluid">
 
     <div class="container">
@@ -12,19 +19,32 @@
           </div>
           <div class="footer-details">
             <div class="footer-details__phone-number">
-              <i class="fa fa-phone" aria-hidden="true"></i> 03 5223 34 53
+              <div class="footer-details__icon">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+              </div>
+              <div class="footer-details__text"> 03 5223 34 53</div>
             </div>
             <div class="footer-details__address">
-              <i class="fa fa-map-marker" aria-hidden="true"></i><span>Office Address</span>
-              <p>Harrison Place, Level 2, 237 Ryrie Street
+              <div class="footer-details__icon">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+              </div>
+              <div class="footer-details__text">
+                <span>Office Address</span>
+                <p>Harrison Place, Level 2, 237 Ryrie Street
                 Geelong Vic 3220</p>
+              </div>
             </div>
             <div class="footer-details__address">
-              <i class="fa fa-envelope" aria-hidden="true"></i><span>Postal Address</span>
-              <p>P.O. Box 4233, Geelong Vic 3220</p>
+              <div class="footer-details__icon">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+              </div>
+              <div class="footer-details__text">
+                <span>Postal Address</span>
+                <p>P.O. Box 4233, Geelong Vic 3220</p>
+              </div>
             </div>
           </div>
-          <div class="footer-social-links">
+          <div class="social-links social-links--has-border-top">
             <ul>
               <li>
                 <a href="#">
@@ -87,7 +107,31 @@
           <div class="footer-extras">
             <div class="footer-extras__item hide-for-mobile">
               <span class="footer-extras__title">Twitter Feed</span>
-              <div class="footer-twitter-feed">
+              <div class="twitter-feed js-twitter-feed">
+
+                <div class="twitter-feed__tweet">
+                  <div class="twitter-feed__icon">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                  </div>
+                  <div class="twitter-feed__text">
+                    <a href="#">@morris</a> Less than 30 minutes until the mountain comes alive, who will be the 2017 #Bathurst1000 Champion? #BornForThis #community #MFL2017 #VASC
+                    <span class="twitter-feed__timestamp">
+                      5 mins only
+                    </span>
+                  </div>
+                </div>
+
+                <div class="twitter-feed__tweet">
+                  <div class="twitter-feed__icon">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                  </div>
+                  <div class="twitter-feed__text">
+                    Less than 30 minutes to go
+                    <span class="twitter-feed__timestamp">
+                      5 mins only
+                    </span>
+                  </div>
+                </div>
 
               </div>
             </div>
@@ -124,41 +168,42 @@
         </div>
       </div>
     </div>
-  </footer>
-  <div class="footer-bottom-bar">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm">
-          <div class="footer-bottom-bar__copyright">
-            &copy; 2017 Morris Finance Ltd. All rights reserved.
+    <div class="footer-bottom-bar">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="footer-bottom-bar__copyright">
+              &copy; 2017 Morris Finance Ltd. All rights reserved.
+            </div>
+          </div>
+          <div class="col-md-7">
+            <ul class="footer-bottom-bar__sub-links">
+              <li>
+                <a href="#">
+                  ACL No.395249
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Terms and Conditions
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  ABN 70 083 630 139
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="col-sm">
-          <ul class="footer-bottom-bar__sub-links">
-            <li>
-              <a href="#">
-                ACL No.395249
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                Privacy Policy
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                Terms and Conditions
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                ABN 70 083 630 139
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
 
+      </div>
     </div>
-  </div>
+  </footer>
+
 </div>

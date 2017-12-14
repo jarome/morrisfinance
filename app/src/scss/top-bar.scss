@@ -59,6 +59,7 @@ $top-bar-sub-menu-vertical-padding-px: 60px;
     background: $light-grey;
     left: 0;
     visibility: hidden;
+    display: none;
     position: absolute;
     margin-top: -1px;
     width: 100vw;
@@ -73,7 +74,8 @@ $top-bar-sub-menu-vertical-padding-px: 60px;
     }
     .top-bar-sub-menu {
       visibility: visible;
-      animation: fadein 0.3s linear;
+      display: block;
+      //animation: fadein 0.3s linear;
       i {
         color: $secondary-color;
       }

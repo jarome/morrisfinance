@@ -26,7 +26,7 @@
   @include media-breakpoint-up(md) {
     height: 65%;
   }
-  height:200px;
+  height:400px;
   color: #D5D6D5;
   background-color:rgba(0, 0, 0, 0.7);
   position: relative;
@@ -88,24 +88,60 @@
   color: #CCCDCB;
   min-height: 435px;
   background-color:rgba(0, 0, 0, 0.7);
+  .carousel-inner {
+    overflow: visible;
+    margin-bottom: $layout-vertical-spacing;
+    @include media-breakpoint-up(md) {
+      overflow: hidden;
+      flex: 1;
+      margin-bottom: 0;
+    }
+  }
+  .carousel-indicators {
+    position: static;
+    margin-right: 0;
+    margin-left: 0;
+    @include media-breakpoint-up(md) {
+      align-self: flex-end;
+    }
+  }
 }
 
 .testomonial-carousel__alt-color {
   color: $accent-color;
 }
 
+.testimonial__container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
+    paddin-top: 0;
+  }
+}
+
 .testimonial__blockquote {
   position: relative;
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
   &:before {
     content: '';
-    left: -50px;
+    left: 0;
+    top: -40px;
     position: absolute;
     width: 39px;
     height: 39px;
-
     background: url('../assets/blockquote@2x.png') no-repeat;
     background-size: contain;
+    @include media-breakpoint-up(md) {
+      left: -70px;
+      top: 10px;
+    }
   }
+}
+
+.testimonial__name {
+  color: $accent-color;
+  font-size: 20px;
 }

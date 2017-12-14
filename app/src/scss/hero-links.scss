@@ -1,0 +1,70 @@
+.hero-links {
+  color: #FFFFFF;
+  &--has-min-height {
+    min-height: 300px;
+  }
+  &--has-background {
+    background: url('../assets/slider@2x.png');
+    background-size: cover;
+  }
+  &.hero-links--fill-to-height {
+    height: 35%;
+  }
+  height: 65%;
+  @include media-breakpoint-up(md) {
+    height: 28%;
+  }
+  flex-direction:column;
+  border-top: 5px solid $accent-color;
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
+  }
+  .hero-links__item {
+    flex: 1;
+    @include media-breakpoint-down(sm) {
+      min-height: 200px;
+    }
+  }
+  .hero-links__item:nth-child(1) {
+    background-color:rgba(0, 0, 0, 0.5);
+  }
+  .hero-links__item:nth-child(2) {
+    background-color:rgba(0, 0, 0, 0.3);
+  }
+  .hero-links__item:nth-child(3) {
+    background-color:rgba(255, 255, 255, 0.6);
+  }
+}
+
+.hero-links__item {
+  display: flex;
+  align-items: flex-end;
+  padding: 0 45px 25px;
+  &--alt-color {
+
+      color: $secondary-color;
+
+  }
+  p {
+    margin-bottom: 10px;
+  }
+}
+.hero-links__content {
+  width: 100%;
+}
+
+.finance-pagination__container {
+  padding: $layout-vertical-spacing 0;
+}
+
+.finance-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
+  }
+  color: $accent-color;
+  text-align: center;
+}

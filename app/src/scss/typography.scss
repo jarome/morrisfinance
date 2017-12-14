@@ -45,11 +45,13 @@ h5 {
   h4 {
     font-size: 36px;
     line-height: floor(36px * 1.1);
+    margin-bottom: $layout-vertical-spacing;
   }
 
   h5 {
     font-size: 24px;
     line-height: floor(24px * 1.1);
+    margin-bottom: $layout-vertical-spacing;
   }
 }
 
@@ -64,6 +66,7 @@ a {
 }
 
 p {
+  margin-bottom: 30px;
 }
 
 .accent-color {

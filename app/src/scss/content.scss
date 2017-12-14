@@ -61,3 +61,46 @@
     color: #6C6D6D;
   }
 }
+
+//Contact Us Page
+
+.contact-us {
+  h4 {
+    margin-bottom: 40px;
+  }
+}
+
+.contact-details__item {
+  color: $secondary-color;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  margin-bottom: 10px;
+  i {
+    flex: 0 0 30px;
+  }
+}
+
+.contact-details__item-title {
+  text-transform: uppercase;
+}
+
+.contact-col {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include media-breakpoint-down(md) {
+    width: 100%;
+    padding: 50px;
+  }
+  @include media-breakpoint-up(md) {
+    padding-left: 10%;
+    padding-right: 100px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .contact-col + .contact-col {
+    padding-left: 20px;
+    padding-right: 10%;
+  }
+}

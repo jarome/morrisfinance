@@ -15,7 +15,7 @@ $(document).ready(function() {
   var delta = 5;
   var navbarHeight = $siteNavigation.outerHeight();
 
-  var isHomepage = window.location.pathname === '/';
+  var isHomepage = (window.location.pathname === '/' || window.location.pathname === '/sites/morrisfinance/');
 
   if(isMobileWidth() !== true && isHomepage) {
     $siteNavigation.addClass('is-hidden');
@@ -50,6 +50,11 @@ $(document).ready(function() {
 
   });
 
+  $siteScrollHomepage.on('click', function() {
+    removeScrollHomepage();
+    scrollTo('.homepage-heading');
+  });
+
   // Toggle Mobile Menu Behaviours
 
   $('.js-toggle-mobile-menu').on('click', function() {
@@ -78,10 +83,14 @@ $(document).ready(function() {
 
   // Mobile Navigation Accordion
 
-  $('.nav-link').on('click', function() {
+  $('.nav-link').on('click', function(e) {
 
     var $subMenu = $(this).siblings('.sub-menu');
-    var $parentNavItem = $(this).closest('.nav-item');
+    var $parentNavItem = $(this).parent('.nav-item');
+
+    if ((isMobileWidth() === true) && ($parentNavItem.hasClass('nav-dropdown-menu'))) {
+      e.preventDefault();
+    }
 
     if ($parentNavItem.hasClass('is-active')) {
       $parentNavItem.removeClass('is-active');
@@ -179,6 +188,7 @@ $(document).ready(function() {
     lastScrollTop = $windowPosition;
 
   });
+
   //Tabs Behaviours
 
   $('.js-tabs li').on('click', function(){
@@ -211,5 +221,16 @@ $(document).ready(function() {
       }
     }
   });
+
+  // Twitter Behaviours
+
+/*  var $twitterFeedEl = $('.js-twitter-feed');
+
+  $twitterFeedEl.twittie({
+    dateFormat: '%b. %d, %Y',
+    template: '{{tweet}} <div class="date">{{date}}</div> <a href="{{url}}" target="_blank">Details</a>',
+    count: 2,
+    hideReplies: true
+  });*/
 
 });

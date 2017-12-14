@@ -4,29 +4,104 @@
 
 {% include "../partials/header.html" %}
 
-<div class="container-fluid">
-  <div class="hero-heading hero-heading--finance">
+<div class="container-fluid contact-us">
+  <div class="hero-heading hero-heading--contact">
     <div class="container">
-      <h1 class="carousel-item__heading">Equipment finance<br/> and <span class="hero-carousel__alt-color">solution</span></h1>
+      <h1 class="carousel-item__heading">Unlock your <br/>business <span class="hero-carousel__alt-color">potential</span></h1>
     </div>
   </div>
-  <div class="container content">
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-md-2">
+      <div class="contact-col col-md-5 container--alt-bg">
+        <h4>Contact Us</h4>
+        <div class="contact-details__item contact-details__phone-number">
+          <i class="fa fa-phone" aria-hidden="true"></i> 03 5223 34 53
+        </div>
+        <div class="contact-details__item contact-details__phone-number">
+          <i class="fa fa-clock-o" aria-hidden="true"></i> Monday - Friday<br/>8:30am - 5:00pm
+        </div>
+        <div class="contact-details__item contact-details__address">
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+          <p><span class="contact-details__item-title">Office Address</span><br/>Harrison Place, Level 2,<br/> 237 Ryrie Street<br/>
+            Geelong Vic 3220</p>
+        </div>
+        <div class="contact-details__item contact-details__address">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          <p><span class="contact-details__item-title">Postal Address</span><br/>P.O. Box 4233,<br/> Geelong Vic 3220</p>
+        </div>
+        <div class="social-links social-links--dark social-links--lrg social-links--has-border-top justify-content-start">
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="col-md-8">
-        <h4>Whether you need to acquire new equipment, pre-loved existing or use assets you currently own to generate working capital for your business, Morris Finance can help with cost effective and strategically structured business finance facilities.</h4>
+      <div class="contact-col col-md-7">
+        <h4>Make an enquiry</h4>
+        <form>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <input type="text" class="form-control" id="exampleInputName" aria-describedby="name" placeholder="Please fill in your name">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="email" placeholder="Please fill in your email">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <input type="number" class="form-control" id="exampleInputNumber" aria-describedby="number" placeholder="Please fill in your phone number">
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <select class="form-control">
+                  <option>Enquiry type</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="form-group">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Comments / Message"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <button type="submit" class="m-button">Submit <i class="fa fa-long-arrow-right"></i></button>
+            </div>
+          </div>
+        </form>
+
       </div>
-      <div class="col-md-2"></div>
     </div>
   </div>
-
-
-  {% include "tabs.html" %}
-
-  {% include "hero-links.html" %}
-
-  {% include "icon-slider.html" %}
 
 </div>
 {% include "../partials/footer.html" %}

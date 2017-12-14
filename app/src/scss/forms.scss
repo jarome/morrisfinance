@@ -13,3 +13,12 @@
   margin-top: 0.55rem;
 }
 
+.contact-us {
+  .form-control {
+    background: $alternate-bg;
+    border: none;
+  }
+  textarea {
+    min-height: 121px;
+  }
+}

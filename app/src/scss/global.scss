@@ -26,7 +26,7 @@ ul {
   }
 }
 .container--alt-bg {
-  background: #f7f7f7;
+  background: $alternate-bg;
 }
 
 hr {
@@ -72,4 +72,17 @@ hr {
   @include media-breakpoint-up(md) {
     display: none !important;
   }
+}
+
+.icon-thumbnail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  @include media-breakpoint-up(lg) {
+    width: 135px;
+    height: 135px;
+  }
+  background: $alternate-bg;
 }

@@ -15,20 +15,20 @@ gulp.task('sass', function() {
       browsers: ['last 2 versions'],
       cascade: false
     }))
-    .pipe(gulp.dest("app/css"))
+    .pipe(gulp.dest("app/dist/css"))
     .pipe(browserSync.stream());
 });
 
 gulp.task('js', function() {
-  return gulp.src(['node_modules/jquery/dist/jquery.js', 'node_modules/owl.carousel/dist/owl.carousel.js', 'node_modules/bootstrap/dist/js/bootstrap.js', 'app/src/js/**/*.js'])
+  return gulp.src(['node_modules/jquery/dist/jquery.js', 'node_modules/owl.carousel/dist/owl.carousel.js', 'node_modules/bootstrap/dist/js/bootstrap.js', 'app/src/js/vendor/tweetie-master/tweetiejs', 'app/src/js/**/*.js'])
     .pipe(concat('app.js'))
-    .pipe(gulp.dest('app/js'));
+    .pipe(gulp.dest('app/dist/js'));
 });
 
 gulp.task('assets', function () {
   gulp.src('app/src/assets/*')
     .pipe(image())
-    .pipe(gulp.dest('app/assets'));
+    .pipe(gulp.dest('app/dist/assets'));
 });
 
 
@@ -40,7 +40,7 @@ gulp.task('nunjucks', function() {
       path: ['app/partials']
     }))
     // output files in app folder
-    .pipe(gulp.dest('app'))
+    .pipe(gulp.dest('app/dist'))
 });
 
 gulp.task('html-watch', ['nunjucks'], function (done) {
@@ -52,7 +52,7 @@ gulp.task('html-watch', ['nunjucks'], function (done) {
 gulp.task('run', ['sass', 'js', 'assets', 'nunjucks'], function() {
 
   browserSync.init({
-    server: "app"
+    server: "app/dist"
   });
 
   gulp.watch(['app/src/scss/*.scss'], ['sass']);

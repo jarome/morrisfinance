@@ -38,6 +38,27 @@
             cover,
             url('../assets/headers/heading-finance@1x.png'));
   }
+  &--investment {
+    @include image-2x(url('../assets/headers/heading-investment@2x.png'),
+            left top,
+            no-repeat,
+            cover,
+            url('../assets/headers/heading-investment@1x.png'));
+  }
+  &--community {
+    @include image-2x(url('../assets/headers/heading-community@2x.png'),
+            left top,
+            no-repeat,
+            cover,
+            url('../assets/headers/heading-community@1x.png'));
+  }
+  &--contact {
+    @include image-2x(url('../assets/headers/heading-contact@2x.png'),
+            left top,
+            no-repeat,
+            cover,
+            url('../assets/headers/heading-contact@1x.png'));
+  }
   &:before {
     height:100%;
     width: 100%;
@@ -61,39 +82,45 @@
   }
 }
 
-.hero-links {
-  &--has-background {
-    background: url('../assets/slider@2x.png');
-    background-size: cover;
-  }
-  &.hero-links--fill-to-height {
-    height: 35%;
-  }
-  height: 65%;
-  @include media-breakpoint-up(md) {
-    height: 28%;
-  }
-  flex-direction:column;
-  border-top: 5px solid $accent-color;
+.finance-pagination__container {
+  padding: $layout-vertical-spacing 0;
+}
+
+.finance-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   @include media-breakpoint-up(md) {
     flex-direction: row;
   }
-  .hero-links__item {
-    flex: 1;
+  color: $accent-color;
+  text-align: center;
+}
+
+.finance-pagination__item {
+  padding: 30px 10px 10px;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  flex-direction: column;
+  height: 120px;
+  @include media-breakpoint-up(md) {
+    height: 158px;
   }
-  .hero-links__item:nth-child(1) {
-    background-color:rgba(0, 0, 0, 0.5);
+  @include media-breakpoint-up(lg) {
+    height: 170px;
   }
-  .hero-links__item:nth-child(2) {
-    background-color:rgba(0, 0, 0, 0.3);
+  @include media-breakpoint-down(md) {
+    width: 100%;
+  }
+  &.current {
+    background: $lighter-grey;
+    box-shadow: 0 0px 10px 0 #AAAAAA;
   }
 }
 
-.hero-links__item {
-  display: flex;
-  align-items: flex-end;
-  padding: 0 45px 25px;
-}
-.hero-links__content {
-  width: 100%;
+.finance-pagination__image {
+  max-height: 50px;
+  margin-bottom: 10px;
 }
