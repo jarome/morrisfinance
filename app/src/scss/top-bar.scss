@@ -47,6 +47,15 @@ $top-bar-sub-menu-vertical-padding-px: 60px;
 }
 
 .top-bar__phone {
+  i {
+    margin-right: 5px;
+  }
+}
+
+.top-bar__help {
+  i {
+    margin-left: 5px;
+  }
 }
 
 .top-bar-dropdown-menu {
@@ -61,7 +70,7 @@ $top-bar-sub-menu-vertical-padding-px: 60px;
     visibility: hidden;
     display: none;
     position: absolute;
-    margin-top: -1px;
+    margin-top: 0;
     width: 100vw;
     margin-left: calc(-50vw + 50%);
     line-height: normal;
@@ -155,6 +164,7 @@ $top-bar-sub-menu-vertical-padding-px: 60px;
   color: $secondary-color;
   h4 {
     text-transform: none;
+    font-weight: 700;
   }
 }
 
@@ -206,6 +216,14 @@ $top-bar-sub-menu-vertical-padding-px: 60px;
 .top-bar-contact__number,
 .top-bar-contact__heading {
   margin-bottom: 10px;
+}
+
+.top-bar-contact__heading--indent {
+  text-indent: -9px;
+}
+
+.top-bar-contact__heading--indent-lrg {
+  text-indent: -12px;
 }
 
 

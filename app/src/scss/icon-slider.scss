@@ -1,6 +1,10 @@
+.icon-slider-container {
+  background: $alternate-bg;
+  padding-bottom: 50px;
+}
 .icon-slider {
 
-  padding: $layout-vertical-spacing 30px;
+  padding: 20px 30px;
 
   .icon-slider__logo {
     img {

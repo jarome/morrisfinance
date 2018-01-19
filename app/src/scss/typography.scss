@@ -5,22 +5,26 @@ h1 {
 
 h2 {
   font-size: 30px;
+  font-weight: 700;
   line-height: floor(30px * 1.1);
   color: $heading-text-color;
 }
 
 h3 {
   font-size: 24px;
+  font-weight: 700;
   line-height: floor(24px * 1.1);
 }
 
 h4 {
   font-size: 20px;
+  font-weight: 400;
   line-height: floor(30px * 1.1);
 }
 
 h5 {
   font-size: 18px;
+  font-weight: 400;
   line-height: floor(18px * 1.1);
 }
 
@@ -31,27 +35,27 @@ h5 {
   }
 
   h2 {
-    font-size: 64px;
-    line-height: floor(64px * 1.1);
+    font-size: 54px;
+    line-height: 60px;
     color: $heading-text-color;
-    margin-bottom: $layout-vertical-spacing;
+    margin-bottom: $layout-font-vertical-spacing;
   }
 
   h3 {
-    font-size: 48px;
-    line-height: floor(48px * 1.1);
+    font-size: 40px;
+    line-height: 45px;
   }
 
   h4 {
-    font-size: 36px;
-    line-height: floor(36px * 1.1);
-    margin-bottom: $layout-vertical-spacing;
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: $layout-font-vertical-spacing;
   }
 
   h5 {
-    font-size: 24px;
-    line-height: floor(24px * 1.1);
-    margin-bottom: $layout-vertical-spacing;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: $layout-font-vertical-spacing;
   }
 }
 
@@ -66,7 +70,11 @@ a {
 }
 
 p {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+}
+
+.secondary-color {
+  color: $secondary-color;
 }
 
 .accent-color {
@@ -75,8 +83,8 @@ p {
 
 .cta-link {
   letter-spacing: 1px;
+  font-weight: 700;
   text-transform: uppercase;
-  font-weight: 900;
   &--sml {
     font-size: 14px;
   }

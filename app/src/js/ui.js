@@ -97,6 +97,9 @@ $(document).ready(function() {
       $subMenu.slideUp();
     } else {
       $parentNavItem.addClass('is-active');
+/*      $subMenu.slideDown(500, function() {
+        $subMenu.css('display', 'flex');
+      });*/
       $subMenu.slideDown();
     }
 

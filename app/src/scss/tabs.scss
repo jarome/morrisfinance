@@ -3,12 +3,13 @@
   margin-bottom: 0;
   h4 {
     color: $accent-color;
+    font-weight: 500;
   }
 }
 
 .tabs__content-container {
   background: $lighter-grey;
-  padding: $layout-vertical-spacing 0;
+  padding: 40px 0 0 0;
 }
 
 .tabs__content-row {
@@ -25,7 +26,6 @@
   padding: 0px;
   list-style: none;
   flex-direction: column;
-  margin-top: $layout-vertical-spacing;
   @include media-breakpoint-up(md) {
     flex-direction: row;
   }
@@ -41,6 +41,8 @@
       max-height: 70px;
     }
   }
+  justify-content: center;
+  opacity: 0.6;
   background: none;
   flex: 1;
   color: $accent-color;
@@ -58,6 +60,7 @@
 
 .tabs__navigation .tabs__link.tabs__current{
   background: $lighter-grey;
+  opacity: 1;
 }
 
 .tabs__content{

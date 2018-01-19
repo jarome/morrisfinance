@@ -3,8 +3,11 @@
 
   <!-- START Interchangeable Newsletter Area - Switched on and off via the backend logic -->
 
-  {% include "subscribe.html" %}
+  {% if hidesubscribe %}
 
+  {% else %}
+    {% include "subscribe.html" %}
+  {% endif %}
   <!-- END Interchangeable Newsletter Area -->
 
   <footer class="footer container-fluid">
@@ -22,7 +25,7 @@
               <div class="footer-details__icon">
                 <i class="fa fa-phone" aria-hidden="true"></i>
               </div>
-              <div class="footer-details__text"> 03 5223 34 53</div>
+              <div class="footer-details__text"> <p>03 5223 34 53</p></div>
             </div>
             <div class="footer-details__address">
               <div class="footer-details__icon">

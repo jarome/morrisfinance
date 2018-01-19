@@ -16,6 +16,10 @@
   font-size: 12px;
 }
 
+.blog-item__tools-tags {
+  margin-left: 5px;
+}
+
 // Latest News specific overrides
 
 .latest-news__recent-items {
@@ -42,6 +46,12 @@
   .blog-item__latest-image,
   .blog-item__content {
     flex: 1;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .blog-item__content {
+    width: 430px;
   }
 }
 

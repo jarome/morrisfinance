@@ -49,6 +49,7 @@
 }
 .footer-details__icon {
   width: 20px;
+  flex: 0 0 20px;
   margin-right: 7px;
 }
 
@@ -188,6 +189,9 @@
   }
 }
 
+.footer-details__text p {
+  margin-bottom: 14px;
+}
 .twitter-feed {
   display: flex;
   flex-direction: column;
@@ -218,10 +222,11 @@
 }
 
 .subscribe-to-newsletter {
-  padding: $layout-vertical-spacing 0;
+  padding: 40px 0;
   color: $secondary-color;
 }
 
 .subscribe-to-newsletter__heading {
   margin-bottom: 30px;
+  font-weight: 700;
 }

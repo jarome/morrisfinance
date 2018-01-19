@@ -1,5 +1,12 @@
 // Header and Naviation
 
+.header {
+  @include media-breakpoint-up(md) {
+    position: fixed;
+    z-index: 2;
+  }
+}
+
 .navbar {
   padding: 0.9rem 1rem;
   align-items: flex-start;
@@ -8,7 +15,7 @@
   width: 100%;
   position: fixed;
   background-color: #FFFFFF;
-  transition: 0.3s ease;
+  transition: 0.2s ease;
   z-index:1000;
   &.mobile-navigation-active {
     height: 100%;
@@ -33,7 +40,7 @@
     align-items: center;
     top: 40px;
     background-color: #FFFFFF;
-    position: sticky;
+    position: fixed;
     padding: 0 50px;
   }
   @include media-breakpoint-up(lg) {
@@ -60,8 +67,10 @@
 
 .navbar__menu {
   font-size: 13px;
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(md) {
     height: 100%;
+  }
+  @include media-breakpoint-up(lg) {
     font-size: 14px;
   }
 }
@@ -84,7 +93,7 @@
     padding: 0.9rem 1rem;
   }
   .navbar-logo {
-    margin: 0.9rem 1rem;
+    margin: 19px 1rem;
   }
   padding: 0;
   .navbar__menu {
@@ -99,9 +108,11 @@
         }
         .nav-item__has-icon {
           flex: 1 0 50%;
-          width: 50%;
+          display: inline-block;
+          //width: 50%;
         }
       }
+      &.nav-dropdown-menu-icons > .sub-menu,
       > .sub-menu {
         display: none;
         list-style: none;
@@ -110,7 +121,7 @@
         font-size: 14px;
       }
       .nav-link {
-        padding: 5px 20px;
+        padding: 10px 20px;
       }
       > .nav-link {
         padding: 20px 20px;
@@ -121,7 +132,7 @@
         &:after {
           transition: 0.3s ease;
           content: '';
-          background: url('../../assets/arrow-right.svg');
+          background: url('../assets/arrow-right.svg');
           background-size: 100%;
           width: 7px;
           right: 20px;
@@ -143,6 +154,11 @@
 .navbar-brand {
   width: 184px;
   height: 40px;
+  @include media-breakpoint-down(xs) {
+    width: 150px;
+    height: 33px;
+    margin-top: 4px;
+  }
 }
 
 .mobile-navigation-tools {
@@ -177,7 +193,10 @@
 .navbar-logo {
   background: url('../assets/logo.png');
   background-size: 100% 100%;
-  text-indent: 100%; white-space: nowrap; overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: 0s;
   &.navbar-logo--inverted {
     background: url('../assets/logo-inverted.png');
     background-size: 100% 100%;
@@ -199,6 +218,7 @@
     width: 60px;
     height: 60px;
     margin-right: 20px;
+    flex: 0 0 60px;
   }
 }
 
@@ -244,7 +264,7 @@
       width: 100vw;
       position: absolute;
       margin-left: calc(-50vw + 50%);
-      font-size: 24px;
+      font-size: 18px;
       text-transform: none;
     }
     .sub-menu li {
@@ -304,18 +324,22 @@
   height: 100%;
   line-height: 100%;
   vertical-align: middle;
-  text-transform: uppercase;
   color: $primary-color;
   transition: color 0.3s ease;
+  @include media-breakpoint-up(md) {
+    text-transform: uppercase;
+  }
 }
+
 
 @include media-breakpoint-up(md) {
   .navbar-nav {
     overflow: hidden;
   }
   .navbar-nav .nav-link {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+    font-weight: 700;
   }
   .navbar-expand-lg .navbar-collapse {
     display: flex;
@@ -323,5 +347,13 @@
   }
   .navbar-expand-lg .navbar-nav {
     flex-direction: row;
+  }
+
+}
+
+@include media-breakpoint-up(lg) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }

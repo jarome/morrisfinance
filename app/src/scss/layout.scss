@@ -2,6 +2,10 @@
   padding: 0;
 }
 
+.container {
+  max-width: 1100px;
+}
+
 .container--has-padding-top {
   padding-top: $layout-vertical-spacing;
 }
@@ -11,7 +15,7 @@
 }
 
 .hero-heading {
-  height: 237px;
+  height: 277px;
   position: relative;
   background-size: cover;
   color: #FFFFFF;
@@ -70,14 +74,14 @@
     z-index: 0;
   }
   h1 {
-    position: relative;
+    position: absolute;
     z-index: 1;
-    top: 127px;
+    bottom: 25px;
   }
   @include media-breakpoint-up(md) {
     height: 435px;
     h1 {
-      top: 190px;
+
     }
   }
 }

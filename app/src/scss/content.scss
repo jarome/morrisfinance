@@ -3,7 +3,7 @@
   padding-bottom: $layout-vertical-spacing;
   ul {
     list-style-type: disc;
-    margin: 16px;
+    margin: 16px 16px 20px;
     li {
       margin-bottom: 10px;
     }
@@ -67,6 +67,7 @@
 .contact-us {
   h4 {
     margin-bottom: 40px;
+    color: $secondary-color;
   }
 }
 
