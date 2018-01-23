@@ -67,6 +67,11 @@
   }
 }
 
+.footer-extras__item + .footer-extras__item {
+  padding-left: 20px;
+}
+
+
 .footer-extras__title {
   font-size: 12px;
   text-transform: uppercase;
@@ -82,9 +87,10 @@
   flex: 1 0 50%;
   width: 50%;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   display: flex;
-  text-align: center;
+  text-align: left;
+  margin-bottom: 14px;
   img {
     width: 50%;
     @include media-breakpoint-up(md) {

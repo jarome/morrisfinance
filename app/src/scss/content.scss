@@ -60,6 +60,11 @@
   h2 {
     color: #6C6D6D;
   }
+  @include media-breakpoint-down(md) {
+    h4 {
+      line-height: 26px;
+    }
+  }
 }
 
 //Contact Us Page
@@ -72,18 +77,21 @@
 }
 
 .contact-details__item {
-  color: $secondary-color;
+  color: $primary-color;
   display: flex;
   align-items: flex-start;
   flex-direction: row;
   margin-bottom: 10px;
   i {
     flex: 0 0 30px;
+    position: relative;
+    top: 3px;
   }
 }
 
 .contact-details__item-title {
   text-transform: uppercase;
+  color: $secondary-color;
 }
 
 .contact-col {

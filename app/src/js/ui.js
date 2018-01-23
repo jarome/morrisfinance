@@ -19,8 +19,6 @@ $(document).ready(function() {
 
   if(isMobileWidth() !== true && isHomepage) {
     $siteNavigation.addClass('is-hidden');
-    $siteHeader.addClass('is-hidden');
-    $siteHeader.css('opacity', '0');
     $siteNavigation.css('opacity', '0');
     if(windowPositionOnLoad === 0) {
       $siteInitialLogo.removeClass('is-hidden');

@@ -1,6 +1,11 @@
 .latest-news {
   padding-top: $layout-vertical-spacing;
   padding-bottom: $layout-vertical-spacing;
+  @include media-breakpoint-down(md) {
+    h5 {
+      padding: 20px 0;
+    }
+  }
 }
 
 .blog-item__latest-image {
