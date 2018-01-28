@@ -3,29 +3,33 @@
 {% block content %}
 
 {% include "../partials/header.html" %}
-{% include "../partials/hero-carousel.html" %}
-{% include "../partials/homepage-heading.html" %}
-<div class="container-fluid container--alt-bg container--has-padding-top hide-for-mobile">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h2>Equipment finance and<br/><span class="accent-color">solutions</span></h2>
+
+
+  {% include "../partials/hero-carousel.html" %}
+  {% include "../partials/homepage-heading.html" %}
+  <div class="container-fluid container--alt-bg container--has-padding-top hide-for-mobile">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Equipment finance and<br/><span class="accent-color">solutions</span></h2>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-2">
-        &nbsp;
-      </div>
-      <div class="col-md-10">
-        <h5>Whether you need to acquire new equipment, pre-loved existing or use assets you currently own to generate working capital for your business, Morris Finance can help with cost effective and strategically structured business finance facilities.</h5>
+      <div class="row">
+        <div class="col-md-2">
+          &nbsp;
+        </div>
+        <div class="col-md-10">
+          <h5>Whether you need to acquire new equipment, pre-loved existing or use assets you currently own to generate working capital for your business, Morris Finance can help with cost effective and strategically structured business finance facilities.</h5>
+        </div>
       </div>
     </div>
   </div>
-</div>
-{% include "../partials/tabs.html" %}
-{% include "../partials/testimonial-carousel.html" %}
-{% include "../partials/latest-news.html" %}
-{% include "../partials/icon-slider.html" %}
-{% include "../partials/footer.html" %}
+  {% include "../partials/tabs.html" %}
+  {% include "../partials/testimonial-carousel.html" %}
+  {% include "../partials/latest-news.html" %}
+  {% include "../partials/icon-slider.html" %}
+  {% include "../partials/footer.html" %}
+
+
 
 {% endblock %}

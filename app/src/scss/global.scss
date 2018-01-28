@@ -1,5 +1,5 @@
 body {
-  background: #FFFFFF;
+  background: #ffffff;
   font-family: $font-family-morris-finance;
   font-size: $font-size-default;
   color: $primary-color;
@@ -46,6 +46,10 @@ hr {
 .is-hidden {
   display: none;
   visibility: hidden;
+}
+
+.container--main {
+  padding: 0;
 }
 
 .hero__initial-logo {

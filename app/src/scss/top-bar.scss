@@ -8,6 +8,13 @@ $top-bar-sub-menu-vertical-padding-px: 60px;
   }
 }
 
+.top-bar-container {
+  justify-content: space-between;
+  @include media-breakpoint-up(md) {
+    display: flex;
+  }
+}
+
 .top-bar {
   display: none;
   @include media-breakpoint-up(md) {
@@ -104,16 +111,17 @@ $top-bar-sub-menu-vertical-padding-px: 60px;
   align-items: center;
   z-index: 1;
   @include media-breakpoint-up(lg) {
-    padding-left: $layout-spacing;
+    //padding-left: $layout-spacing;
   }
 }
 
 
 .top-bar__tools {
   @include media-breakpoint-up(lg) {
-    padding-right: $layout-spacing;
+   // padding-right: $layout-spacing;
   }
   line-height: $top-bar-height-px;
+  justify-self: flex-end;
 }
 
 .top-bar__social {
