@@ -1,21 +1,22 @@
 .tabs {
-  padding-top: $layout-vertical-spacing;
+  //padding-top: $layout-vertical-spacing;
   margin-bottom: 0;
   h4 {
     color: $accent-color;
     font-weight: 500;
+    margin-bottom: 15px;
   }
 }
 
 .tabs__content-container {
   background: $lighter-grey;
-  padding: 40px 0 0 0;
+  padding: 40px 0;
 }
 
 .tabs__content-row {
   flex-direction: column-reverse;
   img {
-    margin-bottom: $layout-vertical-spacing;
+    //margin-bottom: $layout-vertical-spacing;
   }
   @include media-breakpoint-up(md) {
     flex-direction: row;

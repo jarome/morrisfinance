@@ -7,12 +7,21 @@
 }
 
 .container--has-padding-top {
-  padding-top: $layout-vertical-spacing;
+  padding-top: ($layout-vertical-spacing/2);
+  @include media-breakpoint-up(md) {
+    padding-top: $layout-vertical-spacing;
+  }
+
 }
 
 .container--has-padding-bottom {
-  padding-bottom: $layout-vertical-spacing;
+  padding-bottom: ($layout-vertical-spacing/2);
+  @include media-breakpoint-up(md) {
+    padding-bottom: $layout-vertical-spacing;
+  }
 }
+
+
 
 .hero-heading {
   height: 277px;

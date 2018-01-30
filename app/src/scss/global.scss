@@ -31,7 +31,7 @@ ul {
 
 hr {
   border-top: 2px solid $accent-color;
-  margin: $layout-vertical-spacing 0;
+  margin: ($layout-vertical-spacing/2) 0;
 }
 
 .mobile-navigation-open {

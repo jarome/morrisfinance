@@ -10,7 +10,7 @@
     img {
       width: 40%;
       @include media-breakpoint-up(lg) {
-        width: 50%;
+        width: 40%;
       }
       margin: 0 auto;
     }

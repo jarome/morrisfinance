@@ -17,15 +17,6 @@ $(document).ready(function() {
 
   var isHomepage = (window.location.pathname === '/' || window.location.pathname === '/sites/morrisfinance/');
 
-  if(isMobileWidth() !== true && isHomepage) {
-    $siteNavigation.addClass('is-hidden');
-    $siteNavigation.css('opacity', '0');
-    if(windowPositionOnLoad === 0) {
-      $siteInitialLogo.removeClass('is-hidden');
-    }
-
-  }
-
   invertHeaderDynamically(windowPositionOnLoad);
 
   //Top Bar Hover Events
@@ -36,14 +27,8 @@ $(document).ready(function() {
 
     var $closestSubMenu =  $(this).find('.js-top-bar-sub-menu');
 
-    $(this).on('mouseover', function() {
-        var closestSubMenuHeight = $closestSubMenu.height();
-        $('.navbar').css('top', closestSubMenuHeight + 39);
-    });
-
     $(this).on('mouseout', function() {
       $closestSubMenu.removeClass('is-expanded');
-      $('.navbar').css('top', 40);
     });
 
   });
@@ -216,7 +201,7 @@ $(document).ready(function() {
         nav:true
       },
       980:{
-        items:5,
+        items:6,
         nav: true,
         loop:false
       }

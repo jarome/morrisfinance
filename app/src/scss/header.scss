@@ -3,7 +3,8 @@
 .header {
   @include media-breakpoint-up(md) {
     position: fixed;
-    z-index: 2;
+    z-index: 9999;
+    opacity: 0.98;
   }
 }
 
@@ -36,15 +37,14 @@
     transition: 0.3s ease;
   }
   @include media-breakpoint-up(md) {
-    height: 110px;
+    height: 95px;
     align-items: center;
     top: 40px;
     background-color: #FFFFFF;
     position: fixed;
-    padding: 0 50px;
   }
   @include media-breakpoint-up(lg) {
-    padding: 0 $layout-spacing;
+    padding: 0;
   }
   &.invert-navigation {
     background-color: transparent;
@@ -69,6 +69,7 @@
   font-size: 13px;
   @include media-breakpoint-up(md) {
     height: 100%;
+    font-size: 12px;
   }
   @include media-breakpoint-up(lg) {
     font-size: 14px;
@@ -272,7 +273,7 @@
       text-transform: none;
     }
     .sub-menu li {
-      flex: 1 0 25%;
+      flex: 0 0 25%;
       width: 25%;
       margin: 20px 0;
     }
@@ -284,6 +285,38 @@
     }
   }
 
+  .navbar-nav {
+    overflow: hidden;
+  }
+  .navbar-nav .nav-link {
+    padding-right: 0.4rem;
+    padding-left: 0.4rem;
+    font-weight: 700;
+  }
+  .navbar-expand-lg .navbar-collapse {
+    display: flex;
+    flex-basis: auto;
+  }
+  .navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+  }
+}
+
+
+@include media-breakpoint-up(lg) {
+
+  .nav-item {
+    margin-left: 10px;
+    margin-right: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 .mobile-navigation-footer {
@@ -332,32 +365,5 @@
   transition: color 0.3s ease;
   @include media-breakpoint-up(md) {
     text-transform: uppercase;
-  }
-}
-
-
-@include media-breakpoint-up(md) {
-  .navbar-nav {
-    overflow: hidden;
-  }
-  .navbar-nav .nav-link {
-    padding-right: 0.75rem;
-    padding-left: 0.75rem;
-    font-weight: 700;
-  }
-  .navbar-expand-lg .navbar-collapse {
-    display: flex;
-    flex-basis: auto;
-  }
-  .navbar-expand-lg .navbar-nav {
-    flex-direction: row;
-  }
-
-}
-
-@include media-breakpoint-up(lg) {
-  .navbar-expand-lg .navbar-nav .nav-link {
-    padding-left: 1rem;
-    padding-right: 1rem;
   }
 }
