@@ -9,6 +9,11 @@
 }
 
 .navbar {
+  .container {
+    @include media-breakpoint-down(md) {
+      align-items: flex-start;
+    }
+  }
   padding: 0.9rem 1rem;
   align-items: flex-start;
   top: 0;
@@ -89,12 +94,11 @@
 }
 
 .mobile-navigation-active {
-  .mobile-navigation-tools,
-  .navbar-logo {
-    padding: 0.9rem 1rem;
+  .mobile-navigation-tools {
+    padding: 16px 1rem 0;
   }
   .navbar-logo {
-    margin: 19px 1rem;
+    margin: 20px 1rem 0;
   }
   padding: 0;
   .navbar__menu {
@@ -136,7 +140,7 @@
           background: url('../assets/arrow-right.svg');
           background-size: 100%;
           width: 7px;
-          right: 20px;
+           right: 20px;
           top: 19px;
           position: absolute;
           height: 11px;
@@ -164,8 +168,9 @@
 
 .mobile-navigation-tools {
   display: flex;
+  align-items: center;
   .mobile-navigation-call {
-    margin-top: 3px;
+    margin-top: 0px;
     height: 32px;
     width: 32px;
     font-size: 26px;
@@ -173,11 +178,10 @@
 }
 
 .hamburger {
-  padding: 15px 0 15px 5px;
+  padding: 10px 0 0px 5px;
 }
 
 .toggle-mobile-menu {
-  padding-top: 11px;
   &:focus {
     outline: none;
   }
@@ -334,6 +338,7 @@
 
 .mobile-navigation-footer__call {
   flex: 1;
+  font-size: 1rem;
 }
 
 .mobile-navigation-footer__social {

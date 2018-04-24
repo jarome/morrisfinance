@@ -1,5 +1,20 @@
 .hero-links {
+  z-index: 2;
+  &.hero-links--carousel {
+    position: absolute;
+    bottom: 0;
+    .hero-links__item:nth-child(1) {
+      background-color:rgba(255, 255, 255, 0.25);
+    }
+    .hero-links__item:nth-child(2) {
+      background-color:rgba(255, 255, 255, 0.4);
+    }
+    .hero-links__item:nth-child(3) {
+      background-color:rgba(255, 255, 255, 0.8);
+    }
+  }
   color: #FFFFFF;
+  width: 100%;
   &--has-min-height {
     min-height: 300px;
   }
@@ -8,12 +23,14 @@
     background-size: cover;
   }
   &--has-border-top {
-    border-top: 5px solid $accent-color;
+    border-top: 3px solid $accent-color;
+    @include media-breakpoint-up(md) {
+      border-top: 5px solid $accent-color;
+    }
   }
   &.hero-links--fill-to-height {
     //height: 35%;
   }
-  height: 65%;
   @include media-breakpoint-up(md) {
     height: 230px;
   }
@@ -22,16 +39,18 @@
     flex-direction: row;
   }
   .hero-links__item {
-    flex: 1;
+    @include media-breakpoint-up(md) {
+      flex: 1;
+    }
     @include media-breakpoint-down(sm) {
-      min-height: 100px;
+      height: 100px;
     }
   }
   .hero-links__item:nth-child(1) {
-    background-color:rgba(0, 0, 0, 0.5);
+    background-color:rgba(0, 0, 0, 0.6);
   }
   .hero-links__item:nth-child(2) {
-    background-color:rgba(0, 0, 0, 0.3);
+    background-color:rgba(0, 0, 0, 0.4);
   }
   .hero-links__item:nth-child(3) {
     background-color:rgba(255, 255, 255, 0.6);
@@ -65,18 +84,12 @@
 
 }
 
-.finance-pagination__container {
-  padding: $layout-vertical-spacing 0;
-}
-
-.finance-pagination {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  @include media-breakpoint-up(md) {
-    flex-direction: row;
+@media only screen and (max-device-width: 320px) and (max-device-height: 568px) and (-webkit-device-pixel-ratio: 2) {
+  .hero-links .hero-links__item {
+    height: 80px;
   }
-  color: $accent-color;
-  text-align: center;
+  .hero-links__item h3 {
+    font-size: 20px;
+    margin-bottom: .25rem
+  }
 }

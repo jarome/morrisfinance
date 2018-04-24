@@ -17,11 +17,19 @@ $(document).ready(function() {
 
   var isHomepage = (window.location.pathname === '/' || window.location.pathname === '/sites/morrisfinance/');
 
+  var agent = navigator.userAgent||navigator.vendor||window.opera;
+  var isIos = /ip(ad|od|hone)/i.test(agent); // No iOS in the Car support yet ;-)
+  var isAndroid = /android/i.test(agent);
+
   invertHeaderDynamically(windowPositionOnLoad);
 
   //Top Bar Hover Events
 
   var $topBarDropDown = $scope.find('.js-top-bar-dropdown-menu');
+
+  if(isIos) {
+    $scope.addClass('is-ios');
+  }
 
   $topBarDropDown.each(function() {
 
@@ -193,7 +201,7 @@ $(document).ready(function() {
   $('.icon-slider').owlCarousel({
     responsive:{
       0:{
-        items:1,
+        items:3,
         nav:true
       },
       600:{

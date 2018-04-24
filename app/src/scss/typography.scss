@@ -9,7 +9,7 @@ h2 {
   line-height: floor(30px * 1.1);
   color: $heading-text-color;
   &.h2--line-break {
-    padding-top: 30px;
+    padding-top: 10px;
   }
 }
 
@@ -20,15 +20,15 @@ h3 {
 }
 
 h4 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
-  line-height: floor(30px * 1.1);
+  line-height: 22px;
 }
 
 h5 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: floor(18px * 1.1);
+  line-height: 20px;
 }
 
 @include media-breakpoint-up(md) {
@@ -42,6 +42,9 @@ h5 {
     line-height: 46px;
     color: $heading-text-color;
     margin-bottom: $layout-font-vertical-spacing;
+    &.h2--line-break {
+      padding-top: 30px;
+    }
   }
 
   h3 {
