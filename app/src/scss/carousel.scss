@@ -142,7 +142,7 @@
 .hero-carousel__footer {
   position: absolute;
   width: 100%;
-  bottom: 260px;
+  bottom: 269px;
   display: flex;
   @include media-breakpoint-up(md) {
     width: 100%;
@@ -167,7 +167,9 @@
 }
 
 .hero-carousel__find-out-more {
-  flex: 1;
+  position: absolute;
+  bottom: 260px;
+  z-index: 10;
   @include media-breakpoint-up(md) {
     margin: 0;
   }

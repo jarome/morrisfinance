@@ -104,12 +104,6 @@
   margin-bottom: 20px;
 }
 
-.footer-bottom-bar__copyright {
-  @include media-breakpoint-down(md) {
-    margin: 10px 0;
-  }
-}
-
 .footer-social-links {
   color: $light-grey;
   border-top: 1px solid $light-grey;
@@ -140,12 +134,12 @@
 
   @include media-breakpoint-up(md) {
     //line-height: 40px;
-    font-size: 11px;
+    font-size: 10px;
     text-align: left;
     min-height: 40px;
+    line-height: 40px;
   }
   @include media-breakpoint-up(lg) {
-    line-height: 40px;
     font-size: 12px;
   }
   min-height: 80px;
@@ -156,9 +150,17 @@
   color: $light-grey;
 }
 
+.footer-bottom-bar__copyright {
+  @include media-breakpoint-down(sm) {
+    margin: 10px
+  }
+}
+
 .footer-bottom-bar__sub-links {
   display: flex;
   list-style-type: none;
+  align-items: center;
+  justify-content: flex-end;
   @include media-breakpoint-up(lg) {
     justify-content: flex-end;
   }
