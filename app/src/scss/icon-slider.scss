@@ -1,6 +1,10 @@
 .icon-slider-container {
   background: $alternate-bg;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
+
+  .container--has-padding-top {
+    padding-top: 30px;
+  }
 }
 .icon-slider {
 

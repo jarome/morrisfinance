@@ -76,6 +76,9 @@
       top:0;
       bottom:0;
       margin:auto;
+      width: 100%;
+      width: fill-available;
+
       @include media-breakpoint-down(md) {
         width:100%;
       }

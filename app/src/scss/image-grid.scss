@@ -35,7 +35,7 @@
   left: 0;
   right: 0;
   background-color: $accent-color;
-  opacity: 0.9;
+  opacity: 0.95;
   overflow: hidden;
   width: 100%;
   height: 0;
@@ -43,14 +43,21 @@
   flex-direction: column;
 }
 
+.image-grid__name {
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
 .image-grid__description {
   color: #FFFFFF;
+  margin-bottom: 0;
 }
 
 .image-grid__name,
 .image-grid__description {
   clear: both;
-  margin-bottom: 0;
 }
 
 .image-grid__image {

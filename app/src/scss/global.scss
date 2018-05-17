@@ -17,14 +17,20 @@ ul {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  li {
+    flex: 1 0 100%;
+    width: 100%;
+  }
   @include media-breakpoint-up(md) {
     flex-direction: row;
+    li {
+      flex: 1 0 50%;
+      width: 50%;
+    }
   }
-  li {
-    flex: 1 0 50%;
-    width: 50%;
-  }
+
 }
+
 .container--alt-bg {
   background: $alternate-bg;
 }

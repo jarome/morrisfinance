@@ -21,6 +21,7 @@
   &--has-background {
     background: url('../assets/slider@2x.png');
     background-size: cover;
+    background-position-y: 60%;
   }
   &--has-border-top {
     border-top: 3px solid $accent-color;
