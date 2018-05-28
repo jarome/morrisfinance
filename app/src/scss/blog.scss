@@ -9,11 +9,25 @@
     padding-bottom: ($layout-vertical-spacing/2);
   }
 }
+.blog-item__latest {
+}
 
 .blog-item__latest-image {
+  position: relative;
+  overflow: hidden;
   margin-bottom: 20px;
   img {
-    width: 100%;
+    width: fill-available;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  &:after {
+    display: block;
+    padding-top: 56%;
+    content: ' ';
   }
 }
 
@@ -43,19 +57,13 @@
   .blog-item__latest-image {
     width: 100%;
     position: relative;
-    background: black;
     margin-right: 20px;
+    &:after {
+      display: block;
+      padding-top: 87%;
+      content: ' ';
+    }
     img {
-      margin: auto;
-      min-height: 100%;
-      min-width: 100%;
-
-      /* For the following settings we set 100%, but it can be higher if needed
-      See the answer's update */
-      left: -100%;
-      right: -100%;
-      top: -100%;
-      bottom: -100%;
     }
   }
   .blog-item__latest-image,

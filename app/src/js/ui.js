@@ -137,6 +137,7 @@ $(document).ready(function() {
     if(isMobileWidth() === true) {
       invertHeaderDynamically($windowPosition);
     } else {
+      invertHeaderDynamically($windowPosition);
       if($scope.hasClass('mobile-navigation-open')) {
         toggleMobileState($('.js-toggle-mobile-menu'));
       }
