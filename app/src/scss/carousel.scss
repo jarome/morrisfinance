@@ -185,8 +185,6 @@
 }
 
 .testimonial-carousel {
-  display: flex;
-  align-items: center;
   color: #CCCDCB;
   min-height: 340px;
   @include media-breakpoint-up(md) {
@@ -220,6 +218,12 @@
       line-height: 20px;
     }
   }
+  .carousel-item.active,
+  .carousel-item-next,
+  .carousel-item-prev {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .testomonial-carousel__alt-color {
@@ -227,6 +231,7 @@
 }
 
 .testimonial__container {
+  height: 100%;
   display: flex;
   flex-direction: column;
   padding-top: 40px;
