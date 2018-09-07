@@ -116,6 +116,7 @@
 .pagination {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .pagination-item {
