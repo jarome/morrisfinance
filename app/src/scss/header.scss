@@ -257,6 +257,20 @@
         }
       }
     }
+    &.nav-item--members {
+      background: $secondary-color;
+      border-bottom: 5px solid $secondary-color;
+      color: #fff;
+      .nav-link {
+        color: #fff;
+      }
+      &:hover {
+        .nav-link {
+          color: #fff;
+        }
+        border-bottom: 5px solid #fff;
+      }
+    }
   }
 
   .nav-item__has-icon {
